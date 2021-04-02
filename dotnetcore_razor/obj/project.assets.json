@@ -1797,6 +1797,29 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "RestaurantData.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/RestaurantData.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RestaurantData.Core.dll": {}
+        }
+      },
+      "RestaurantDataService.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "RestaurantData.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/RestaurantDataService.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RestaurantDataService.Data.dll": {}
+        }
       }
     }
   },
@@ -6061,11 +6084,22 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "RestaurantData.Core/1.0.0": {
+      "type": "project",
+      "path": "../RestaurantData.Core/RestaurantData.Core.csproj",
+      "msbuildProject": "../RestaurantData.Core/RestaurantData.Core.csproj"
+    },
+    "RestaurantDataService.Data/1.0.0": {
+      "type": "project",
+      "path": "../RestaurantDataService.Data/RestaurantDataService.Data.csproj",
+      "msbuildProject": "../RestaurantDataService.Data/RestaurantDataService.Data.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.5"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.5",
+      "RestaurantDataService.Data >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -6093,7 +6127,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\santhoshr\\Desktop\\dotnetcore_razor\\dotnetcore_razor\\RestaurantDataService.Data\\RestaurantDataService.Data.csproj": {
+              "projectPath": "C:\\Users\\santhoshr\\Desktop\\dotnetcore_razor\\dotnetcore_razor\\RestaurantDataService.Data\\RestaurantDataService.Data.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

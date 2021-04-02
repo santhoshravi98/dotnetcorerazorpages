@@ -1,0 +1,60 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\santhoshr\\Desktop\\dotnetcore_razor\\dotnetcore_razor\\RestaurantData.Core\\RestaurantData.Core.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\santhoshr\\Desktop\\dotnetcore_razor\\dotnetcore_razor\\RestaurantData.Core\\RestaurantData.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\santhoshr\\Desktop\\dotnetcore_razor\\dotnetcore_razor\\RestaurantData.Core\\RestaurantData.Core.csproj",
+        "projectName": "RestaurantData.Core",
+        "projectPath": "C:\\Users\\santhoshr\\Desktop\\dotnetcore_razor\\dotnetcore_razor\\RestaurantData.Core\\RestaurantData.Core.csproj",
+        "packagesPath": "C:\\Users\\santhoshr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\santhoshr\\Desktop\\dotnetcore_razor\\dotnetcore_razor\\RestaurantData.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\santhoshr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

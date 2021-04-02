@@ -1,0 +1,11 @@
+C:\Users\santhoshr\Desktop\dotnetcore_razor\dotnetcore_razor\RestaurantDataService.Data\obj\Debug\netcoreapp3.1\RestaurantDataService.Data.csprojAssemblyReference.cache
+C:\Users\santhoshr\Desktop\dotnetcore_razor\dotnetcore_razor\RestaurantDataService.Data\obj\Debug\netcoreapp3.1\RestaurantDataService.Data.AssemblyInfoInputs.cache
+C:\Users\santhoshr\Desktop\dotnetcore_razor\dotnetcore_razor\RestaurantDataService.Data\obj\Debug\netcoreapp3.1\RestaurantDataService.Data.AssemblyInfo.cs
+C:\Users\santhoshr\Desktop\dotnetcore_razor\dotnetcore_razor\RestaurantDataService.Data\bin\Debug\netcoreapp3.1\RestaurantDataService.Data.deps.json
+C:\Users\santhoshr\Desktop\dotnetcore_razor\dotnetcore_razor\RestaurantDataService.Data\bin\Debug\netcoreapp3.1\RestaurantDataService.Data.dll
+C:\Users\santhoshr\Desktop\dotnetcore_razor\dotnetcore_razor\RestaurantDataService.Data\bin\Debug\netcoreapp3.1\RestaurantDataService.Data.pdb
+C:\Users\santhoshr\Desktop\dotnetcore_razor\dotnetcore_razor\RestaurantDataService.Data\bin\Debug\netcoreapp3.1\RestaurantData.Core.dll
+C:\Users\santhoshr\Desktop\dotnetcore_razor\dotnetcore_razor\RestaurantDataService.Data\bin\Debug\netcoreapp3.1\RestaurantData.Core.pdb
+C:\Users\santhoshr\Desktop\dotnetcore_razor\dotnetcore_razor\RestaurantDataService.Data\obj\Debug\netcoreapp3.1\RestaurantDataService.Data.csproj.CopyComplete
+C:\Users\santhoshr\Desktop\dotnetcore_razor\dotnetcore_razor\RestaurantDataService.Data\obj\Debug\netcoreapp3.1\RestaurantDataService.Data.dll
+C:\Users\santhoshr\Desktop\dotnetcore_razor\dotnetcore_razor\RestaurantDataService.Data\obj\Debug\netcoreapp3.1\RestaurantDataService.Data.pdb

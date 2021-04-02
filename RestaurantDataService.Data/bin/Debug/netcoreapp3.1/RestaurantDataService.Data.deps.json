@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "RestaurantDataService.Data/1.0.0": {
+        "dependencies": {
+          "RestaurantData.Core": "1.0.0"
+        },
+        "runtime": {
+          "RestaurantDataService.Data.dll": {}
+        }
+      },
+      "RestaurantData.Core/1.0.0": {
+        "runtime": {
+          "RestaurantData.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "RestaurantDataService.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RestaurantData.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

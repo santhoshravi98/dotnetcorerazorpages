@@ -4,5 +4,39 @@
     ViewData["Title"] = "List";
 }
 
-<h1>List</h1>
+<h1>Restaurants</h1>
+
+
+<form method="get">
+    <div class="form-group">
+        <div class="input-group">
+            <input type="search" class="form-control" value="" />
+            <span class="input-group-btn">
+                <button class="btn btn-default">
+                    <i >Search</i>
+                </button>
+            </span>
+        </div>
+    </div>
+</form>
+
+<table class="table">
+    @foreach (var res in Model.Restaurants)
+    {
+        <tr>
+            <td>
+                @res.Name
+            </td>
+            <td>
+                @res.Location
+            </td>
+            <td>
+                @res.Type
+            </td>
+        </tr>
+    }
+</table>
+
+
+<div>@Model.Message</div>
 

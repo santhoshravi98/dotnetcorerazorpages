@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnetcore_razor", "dotnetcore_razor\dotnetcore_razor.csproj", "{A1092676-2D24-4B7F-AC56-B51F9F04ACF6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnetcore_razor", "dotnetcore_razor\dotnetcore_razor.csproj", "{A1092676-2D24-4B7F-AC56-B51F9F04ACF6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantData.Core", "RestaurantData.Core\RestaurantData.Core.csproj", "{C76BC79C-7DB4-4322-B4EF-993925A00101}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantDataService.Data", "RestaurantDataService.Data\RestaurantDataService.Data.csproj", "{A6348337-205A-466D-B0FC-0AE36B5B3AB5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{A1092676-2D24-4B7F-AC56-B51F9F04ACF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1092676-2D24-4B7F-AC56-B51F9F04ACF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1092676-2D24-4B7F-AC56-B51F9F04ACF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C76BC79C-7DB4-4322-B4EF-993925A00101}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C76BC79C-7DB4-4322-B4EF-993925A00101}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C76BC79C-7DB4-4322-B4EF-993925A00101}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C76BC79C-7DB4-4322-B4EF-993925A00101}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6348337-205A-466D-B0FC-0AE36B5B3AB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6348337-205A-466D-B0FC-0AE36B5B3AB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6348337-205A-466D-B0FC-0AE36B5B3AB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6348337-205A-466D-B0FC-0AE36B5B3AB5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
