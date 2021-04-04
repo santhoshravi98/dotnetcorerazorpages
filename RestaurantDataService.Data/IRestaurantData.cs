@@ -10,6 +10,9 @@ namespace RestaurantDataService.Data
     public interface IRestaurantData
     {
         IEnumerable<Restaurant> GetRestaurantsByName(string name);
+        Restaurant GetRestaurantById(int id);
+        Restaurant UpdateRestaurant(Restaurant restaurant);
+        public void AddRestaurant(Restaurant restaurant);
     }
     public class RestaurantDataStore : IRestaurantData
     {
@@ -19,12 +22,13 @@ namespace RestaurantDataService.Data
             Restaurants = new List<Restaurant>()
             {
                 new Restaurant{Id = 1, Name = "Chennai Cafe", Location = "Chennai",Type=Type.SouthIndian},
-                 new Restaurant{Id = 1, Name = "Kochi Cafe", Location = "Kochi",Type=Type.NorthIndian},
-                  new Restaurant{Id = 1, Name = "Kolkata Cafe", Location = "Kolkata",Type=Type.SouthIndian},
-                   new Restaurant{Id = 1, Name = "Mumbai Cafe", Location = "Mumbai",Type=Type.NorthIndian},
-                    new Restaurant{Id = 1, Name = "Delhi Cafe", Location = "Delhi",Type=Type.SouthIndian}
+                 new Restaurant{Id = 2, Name = "Kochi Cafe", Location = "Kochi",Type=Type.NorthIndian},
+                  new Restaurant{Id = 3, Name = "Kolkata Cafe", Location = "Kolkata",Type=Type.SouthIndian},
+                   new Restaurant{Id = 4, Name = "Mumbai Cafe", Location = "Mumbai",Type=Type.NorthIndian},
+                    new Restaurant{Id = 5, Name = "Delhi Cafe", Location = "Delhi",Type=Type.SouthIndian}
             };
         }
+
         public IEnumerable<Restaurant> GetRestaurantsByName(string name = null)
         {
             return from r in Restaurants
@@ -33,5 +37,28 @@ namespace RestaurantDataService.Data
                    select r;
         }
 
+        public Restaurant GetRestaurantById(int id)
+        {
+            return Restaurants.SingleOrDefault(r => r.Id == id);
+        }
+
+        public Restaurant UpdateRestaurant(Restaurant restaurant)
+        {
+            var res = Restaurants.SingleOrDefault(r => r.Id == restaurant.Id);
+            if (res != null)
+            {
+                res.Name = restaurant.Name;
+                res.Location = restaurant.Location;
+                res.Type = restaurant.Type;
+            }
+            return res;
+        }
+
+        public void AddRestaurant(Restaurant restaurant)
+        {
+            restaurant.Id = Restaurants.Max(r => r.Id) + 1;
+            Restaurants.Add(restaurant);
+        }
     }
+
 }

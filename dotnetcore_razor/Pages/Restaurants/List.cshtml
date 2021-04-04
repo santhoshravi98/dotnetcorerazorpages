@@ -10,7 +10,7 @@
 <form method="get">
     <div class="form-group">
         <div class="input-group">
-            <input type="search" class="form-control" value="" />
+            <input type="search" class="form-control" asp-for="SearchTerm"/>
             <span class="input-group-btn">
                 <button class="btn btn-default">
                     <i >Search</i>
@@ -23,20 +23,28 @@
 <table class="table">
     @foreach (var res in Model.Restaurants)
     {
-        <tr>
-            <td>
-                @res.Name
-            </td>
-            <td>
-                @res.Location
-            </td>
-            <td>
-                @res.Type
-            </td>
-        </tr>
+    <tr>
+        <td>
+            @res.Name
+        </td>
+        <td>
+            @res.Location
+        </td>
+        <td>
+            @res.Type
+        </td>
+        <td>
+            <a class="btn btn-danger" asp-page="./Detail" asp-route-restid=@res.Id>View Restaurant</a>
+        </td>
+        <td>
+            <a class="btn btn-danger" asp-page="./Edit" asp-route-restid=@res.Id>Edit Restaurant</a>
+        </td>
+    </tr>
     }
 </table>
 
+
+<a class="btn btn-primary" asp-page="./Edit">Create Restaurant</a>
 
 <div>@Model.Message</div>
 

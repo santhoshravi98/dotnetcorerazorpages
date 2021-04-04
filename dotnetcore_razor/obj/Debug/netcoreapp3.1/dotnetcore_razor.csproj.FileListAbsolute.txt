@@ -111,3 +111,6 @@ C:\Users\santhoshr\Desktop\dotnetcore_razor\dotnetcore_razor\dotnetcore_razor\bi
 C:\Users\santhoshr\Desktop\dotnetcore_razor\dotnetcore_razor\dotnetcore_razor\bin\Debug\netcoreapp3.1\RestaurantDataService.Data.dll
 C:\Users\santhoshr\Desktop\dotnetcore_razor\dotnetcore_razor\dotnetcore_razor\bin\Debug\netcoreapp3.1\RestaurantDataService.Data.pdb
 C:\Users\santhoshr\Desktop\dotnetcore_razor\dotnetcore_razor\dotnetcore_razor\bin\Debug\netcoreapp3.1\RestaurantData.Core.pdb
+C:\Users\santhoshr\Desktop\dotnetcore_razor\dotnetcore_razor\dotnetcore_razor\obj\Debug\netcoreapp3.1\Razor\Pages\Restaurants\Detail.cshtml.g.cs
+C:\Users\santhoshr\Desktop\dotnetcore_razor\dotnetcore_razor\dotnetcore_razor\obj\Debug\netcoreapp3.1\Razor\Pages\Restaurants\NotFound.cshtml.g.cs
+C:\Users\santhoshr\Desktop\dotnetcore_razor\dotnetcore_razor\dotnetcore_razor\obj\Debug\netcoreapp3.1\Razor\Pages\Restaurants\Edit.cshtml.g.cs

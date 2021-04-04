@@ -1,0 +1,28 @@
+﻿@page "{restid :int?}"
+@model dotnetcore_razor.EditModel
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Editing @Model.restaurant.Name</h1>
+
+<form method="post">
+    <input type="hidden" asp-for="restaurant.Id" />
+    <div class="form-group">
+        <label asp-for="restaurant.Name"></label>
+        <input asp-for="restaurant.Name" class="form-control" />
+        <span class="text-danger" asp-validation-for="restaurant.Name"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="restaurant.Location"></label>
+        <input asp-for="restaurant.Location" class="form-control" />
+        <span class="text-danger" asp-validation-for="restaurant.Location"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="restaurant.Type"></label>
+        <select asp-for="restaurant.Type" class="form-control" asp-items="Model.Cuisines"></select>
+        <span class="text-danger" asp-validation-for="restaurant.Type"></span>
+    </div>
+    <button type="submit" class="btn btn-danger">Save</button>
+</form>
+
