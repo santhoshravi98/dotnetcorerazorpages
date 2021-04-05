@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -41,7 +42,7 @@ namespace dotnetcore_razor
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
-
+            app.Use(SayHelloMiddleWare);
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
@@ -54,5 +55,21 @@ namespace dotnetcore_razor
                 endpoints.MapRazorPages();
             });
         }
+
+        private RequestDelegate SayHelloMiddleWare(RequestDelegate arg)
+        {
+            return async context =>
+            {
+                if (context.Request.Path.StartsWithSegments("/hello"))
+                {
+                    await context.Response.WriteAsync("Hello from Middleware");
+                }
+                else
+                {
+                    await arg(context);
+                }
+            };
+        }
+
     }
 }

@@ -1,7 +1,6 @@
 C:\Users\santhoshr\Desktop\dotnetcore_razor\dotnetcore_razor\RestaurantData.Core\bin\Debug\netcoreapp3.1\RestaurantData.Core.deps.json
 C:\Users\santhoshr\Desktop\dotnetcore_razor\dotnetcore_razor\RestaurantData.Core\bin\Debug\netcoreapp3.1\RestaurantData.Core.dll
 C:\Users\santhoshr\Desktop\dotnetcore_razor\dotnetcore_razor\RestaurantData.Core\bin\Debug\netcoreapp3.1\RestaurantData.Core.pdb
-C:\Users\santhoshr\Desktop\dotnetcore_razor\dotnetcore_razor\RestaurantData.Core\obj\Debug\netcoreapp3.1\RestaurantData.Core.csprojAssemblyReference.cache
 C:\Users\santhoshr\Desktop\dotnetcore_razor\dotnetcore_razor\RestaurantData.Core\obj\Debug\netcoreapp3.1\RestaurantData.Core.AssemblyInfoInputs.cache
 C:\Users\santhoshr\Desktop\dotnetcore_razor\dotnetcore_razor\RestaurantData.Core\obj\Debug\netcoreapp3.1\RestaurantData.Core.AssemblyInfo.cs
 C:\Users\santhoshr\Desktop\dotnetcore_razor\dotnetcore_razor\RestaurantData.Core\obj\Debug\netcoreapp3.1\RestaurantData.Core.dll

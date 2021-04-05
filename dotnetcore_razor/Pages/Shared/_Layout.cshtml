@@ -35,6 +35,7 @@
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
+            <vc:count></vc:count>
         </main>
     </div>
 
@@ -42,7 +43,10 @@
         <div class="container">
             &copy; 2021 - dotnetcore_razor - <a asp-area="" asp-page="/Privacy">Privacy</a>
         </div>
+        <br />
     </footer>
+    <br />
+    @RenderSection("Footer", required: false);
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

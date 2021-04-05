@@ -13,6 +13,8 @@ namespace RestaurantDataService.Data
         Restaurant GetRestaurantById(int id);
         Restaurant UpdateRestaurant(Restaurant restaurant);
         public void AddRestaurant(Restaurant restaurant);
+        public Restaurant DeleteRestaurant(int id);
+        public int GetCount();
     }
     public class RestaurantDataStore : IRestaurantData
     {
@@ -58,6 +60,19 @@ namespace RestaurantDataService.Data
         {
             restaurant.Id = Restaurants.Max(r => r.Id) + 1;
             Restaurants.Add(restaurant);
+        }
+
+        public Restaurant DeleteRestaurant(int id)
+        {
+            var restaurant = Restaurants.FirstOrDefault(r => r.Id == id);
+            if (restaurant != null)
+                Restaurants.Remove(restaurant);
+            return restaurant;
+        }
+
+        public int GetCount()
+        {
+            return Restaurants.Count();
         }
     }
 
